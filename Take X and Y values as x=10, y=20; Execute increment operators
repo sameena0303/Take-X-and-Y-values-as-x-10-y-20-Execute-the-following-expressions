@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+    int x,y,A,B,C,D,E;
+    printf("enter the values of x and y : ");
+    scanf("%d%d", &x ,&y);
+    A= x++ + ++y;
+    B= ++x + ++y;
+    C= ++x + --y;
+    D= ++x - y;  
+    E= x-- + --y + x++ - y++;
+    printf("%d\n%d\n%d\n%d\n%d",A,B,C,D,E);
+    return 0;
+}
